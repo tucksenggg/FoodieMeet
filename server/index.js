@@ -6,8 +6,10 @@ const port = 3000;
 
 app.use(bodyParser.urlencoded({ extended:true }));
 
+app.set('views', '../client/views');
+
 app.get("/", (req, res) => {
-  res.send("Like and subscribe")
+  res.render("index.ejs");
 })
 
 app.listen(port, () => {
