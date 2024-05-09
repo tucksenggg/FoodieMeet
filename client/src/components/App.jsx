@@ -4,8 +4,9 @@ import Header from "./Header";
 import axios from 'axios';
 import { Link, Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
-import Login from "../pages/Login"
+import Login from "../pages/Login";
 import Signup from "../pages/Signup";
+import SearchBar from "./SearchBar";
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
       <Route path="/signup" element={<Signup />}></Route>
       <Route path="/login" element={<Login />}></Route>
     </Routes>
+    <SearchBar />
     <Footer />
   </div>
   )
